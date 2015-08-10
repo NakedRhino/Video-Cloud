@@ -25,15 +25,15 @@ var dummyData = [
 angular.module('app.home', [])
 
   .controller('homeController', function($scope) {
-    $scope.home = {};
-    $scope.test = 'Home says: Hello world!';
+    // $scope.home = {};
+    // $scope.test = 'Home says: Hello world!';
     
     $('#videoContainer').hide(); //test
     $scope.submit = function(){
       //request the vidoe and comments from the server
     }
   })
-  // I just went ahead on created my own controller because I'm sure what payton is doing
+  // I just went ahead on created my own controller here need to check with Payton
   .controller('movieController', function($scope, homeFactory){
     $scope.movie = homeFactory.movie;
     $scope.movies = dummyData;
